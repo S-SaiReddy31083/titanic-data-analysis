@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Load the Dataset
-df = pd.read_csv("train.csv")
+df = pd.read_csv("titanicdataset/train.csv")
 print(df.head())
 
 #Getting the Information about the dataset
