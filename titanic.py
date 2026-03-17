@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+
 
 #Load the Dataset
 df = pd.read_csv("titanicdataset/train.csv")
@@ -58,3 +60,16 @@ plt.show()
 plt.pie(df["Sex"].value_counts().values, labels=df["Sex"].value_counts().index,autopct="%1.1f%%",colors=["blue","green"])
 plt.title("Gender Distribution")
 plt.show()
+
+#Using the seaborn Library to Create a Bar Plot
+sns.barplot(x="Pclass",y="Survived",data=df)
+plt.title("Survival Rate By Passenger Class")
+plt.show()
+
+#Using the seaborn library to create the histogram for the age Distribution
+sns.histplot(df["Age"],bins=20,color="orange")
+plt.title("Age Distribution")
+plt.show()
+
+
+
