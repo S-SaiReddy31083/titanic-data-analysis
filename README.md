@@ -1,34 +1,63 @@
-# 🚢 Titanic Data Analysis Project
+
+---
+
+# ✅ **README – Commit 2 (Model + Evaluation Update)**
+Update your README in the **second commit**:
+
+```markdown
+# 🚢 Titanic Survival Prediction Project
 
 ## 📌 Overview
-This project performs data preprocessing and exploratory data analysis (EDA) on the Titanic dataset to understand patterns related to passenger survival.
+This project analyzes the Titanic dataset, performs data preprocessing and visualization, and builds a machine learning model to predict passenger survival.
 
 ---
 
 ## 📂 Dataset
 - Dataset: Titanic (`train.csv`)
-- Contains passenger details like age, class, gender, etc.
+- Features include passenger class, age, family details, gender, etc.
 
 ---
 
 ## 🧹 Data Preprocessing
-- Checked dataset info and statistics
-- Identified missing values
-- Handled missing data:
-  - Age → filled with mean
-  - Cabin → filled with "Unknown"
-  - Embarked → filled with 0
-- Checked duplicate values
+- Handled missing values:
+  - Age → mean
+  - Cabin → "Unknown"
+  - Embarked → 0
+- Checked duplicates
 
 ---
 
 ## 📊 Exploratory Data Analysis
-Visualizations created:
-- Survival count (bar chart)
-- Age distribution (histogram)
-- Gender distribution (pie chart)
-- Survival rate by passenger class (Seaborn barplot)
-- Age distribution (Seaborn histogram)
+- Bar chart (Survival count)
+- Histogram (Age distribution)
+- Pie chart (Gender distribution)
+- Seaborn barplot (Survival by class)
+- Seaborn histogram (Age)
+
+---
+
+## 🤖 Machine Learning Model
+- Model: Logistic Regression
+- Features used:
+  - Pclass
+  - Age
+  - SibSp
+  - Parch
+
+### Train-Test Split
+- 80% training
+- 20% testing
+
+---
+
+## 📈 Model Evaluation
+- Accuracy Score
+- Classification Report
+- Confusion Matrix
+
+### 🔷 Confusion Matrix Visualization
+- Heatmap created using Seaborn
+- Shows prediction performance clearly
 
 ---
 
@@ -38,10 +67,11 @@ Visualizations created:
 - NumPy
 - Matplotlib
 - Seaborn
+- Scikit-learn
 
 ---
 
 ## ▶️ How to Run
 ```bash
-pip install pandas numpy matplotlib seaborn
+pip install pandas numpy matplotlib seaborn scikit-learn
 python your_script_name.py
